@@ -1,6 +1,6 @@
 # mikemathew.me
 
-Don't call it a comeback, I've been working on this for years. :mic:
+Don't call it a comeback, I've been working on this for years. 🎤
 
 This project combines my old weblog at drumsensei.com with my personal site mikemathew.com.
 
