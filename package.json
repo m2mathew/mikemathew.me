@@ -4,6 +4,9 @@
   "description": "Personal site for Mike Mathew",
   "main": "index.html",
   "scripts": {
+    "start": "./node_modules/.bin/eleventy --serve --quiet",
+    "prepare": "husky",
+    "prettier": "npx prettier ./config --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +19,8 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4"
+  },
+  "lint-staged": {
+    "config/**/*.{js}": "prettier --write --ignore-unknown"
   }
 }
