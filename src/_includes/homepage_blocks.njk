@@ -1,0 +1,94 @@
+<div class="container container-m">
+    <h2>Ahoy there, I'm Mike</h2>
+
+    <p>I'm a creator of <a href="/projects">web curios</a>, writer of <a href="/blog">blog posts</a>, podcaster on <a href="https://ruminatepodcast.com">Ruminate</a> and <a href="https://wegot.family">We Got Family</a>, and I run <a href="https://echofeed.app">EchoFeed</a>.</p>
+
+    <p>You can find me on Mastodon as <a href="https://social.lol/@robb">robb@social.lol</a> and more things as <code>rknightuk</code>. You can also <a href="https://rknight.me/verify">verify what is and isn't me</a>.</p>
+
+    <p>Find out <a href="/about">about me</a> or <a href="/about/colophon">this internet website</a>.</p>
+
+    <div class="grid-2">
+        <div class="titlebox">
+            <h2 class="titlebox__name">Posts</h2>
+            {# {%- for post in collections.firstPosts %}
+                <div class="entryitem">
+                    <div class="entryitem--data">
+                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                        <hr>
+                        <span class="entryitem--date">{{ post.data.date.toISOString() | isoDateOnly }}</span>
+                    </div>
+                </div>
+            {% endfor %} #}
+            <a class="titlebox__link" href="/blog">All Posts &rarr;</a>
+        </div>
+        <div class="titlebox">
+            <h2 class="titlebox__name">Links</h2>
+            {# {%- for post in collections.links.slice(0, 5) %}
+                <div class="entryitem">
+                    <div class="entryitem--data">
+                        <a href="{{ post.data.link }}">{{ post.data.title }} <span style="font-weight: normal;">&nearrow;</span></a>
+                        <hr>
+                        <span class="entryitem--date">
+                            <a href="{{ post.data.permalink | stripIndex }}">{{ post.data.date.toISOString() | isoDateOnly }}</a>
+                        </span>
+                    </div>
+                </div>
+            {% endfor %} #}
+            <a class="titlebox__link" href="/links">All Links &rarr;</a>
+        </div>
+    </div>
+
+    <div class="titlebox">
+        <h2 class="titlebox__name">Projects</h2>
+        <div class="home-projects" style="margin-top: 25px;">
+            {# {%- for project in site.projects.featured %}
+            <div class="home-project" style="background-image: url('/assets/projects/{{ project.image }}');">
+                <a href="{{ project.link }}">{{ project.title }}</a>
+            </div>
+            {% endfor%} #}
+        </div>
+        <a class="titlebox__link" href="/projects">All Projects &rarr;</a>
+    </div>
+
+    <div class="titlebox">
+        <h2 class="titlebox__name">Almanac Entries</h2>
+        <div class="almanac-grid fixed">
+            {# {%- for post in collections.almanac.slice(0, 5) %}
+                {% set almanacImage %}{{ { mediaType: post.data.mediaType, tmdbid: post.data.tmdbid, giantbombid: post.data.giantbombid, customImage: post.data.customImage, isbn13: post.data.isbn13 } | getAlmanacImage }}{% endset %}
+                <hyper-card>
+                    <a href="{{ post.data.permalink | stripIndex }}">
+                        <img class="almanac-poster" src="{{ almanacImage }}" alt="{{ post.data.title }} Poster">
+                    </a>
+                </hyper-card>
+            {% endfor %} #}
+        </div>
+        <a class="titlebox__link" href="/almanac">All Entries &rarr;</a>
+    </div>
+
+    <div class="titlebox">
+        <h2 class="titlebox__name">Webrings</h2>
+        <div class="entryitem">
+            <div class="entryitem--data">
+                <a href="https://cs.sjoy.lol">CSS Joy</a>
+                <hr>
+                <span class="entryitem--webringbuttons">
+                    <a href="https://webri.ng/webring/cssjoy/previous?via=https://rknight.me" aria-label="See the previous website from the webring">
+                        <svg class="icon webring--navicon">
+                            <use xlink:href="#chevron-left"></use>
+                        </svg>
+                    </a>
+                    <a href="https://webri.ng/webring/cssjoy/random?via=https://rknight.me" aria-label="Show a random website from the webring">
+                        <svg class="icon webring--randomicon">
+                            <use xlink:href="#dice"></use>
+                        </svg>
+                    </a>
+                    <a href="https://webri.ng/webring/cssjoy/next?via=https://rknight.me" aria-label="See the next website from the webring">
+                        <svg class="icon webring--navicon">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
