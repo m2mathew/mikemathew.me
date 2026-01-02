@@ -1,2 +1,4 @@
 /* https: //andy-bell.co.uk/a-modern-css-reset/ */
 @import "_reset.css";
+@import "_variables.css";
+@import "_base.css";
