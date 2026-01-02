@@ -4,18 +4,21 @@
   "description": "Personal site for Mike Mathew",
   "main": "index.html",
   "scripts": {
-    "start": "./node_modules/.bin/eleventy --serve --quiet",
+    "build": "./node_modules/.bin/eleventy",
     "prepare": "husky",
     "prettier": "npx prettier ./config --write",
+    "start": "./node_modules/.bin/eleventy --serve --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Mike Mathew",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0"
   },
   "devDependencies": {
+    "@11ty/eleventy-navigation": "^1.0.5",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4"
