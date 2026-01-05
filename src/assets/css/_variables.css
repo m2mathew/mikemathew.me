@@ -1,10 +1,14 @@
 :root {
-    --offwhite: #fff0d4;
+    /* from https://texture.alanwsmith.com/ */
+    --bg-lightness: 0.035;
+    --bg-chroma: 0.1487;
+    --bg-hue: 223;
+
+    --offwhite: #F8F4E5;
     --offwhite-subtle: #c4baa8;
     --offwhite-subtle-extra: #57524a;
     --purewhite: #ffffff;
-    --nearblack: #272523;
-    --bg-darker: #1e1d1b;
+    --nearblack: #1a1a24;
     --code-black: #060606;
     --primary: #e33d94;
     --primary-subtle: #ef77ba;
