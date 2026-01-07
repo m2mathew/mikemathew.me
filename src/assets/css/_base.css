@@ -35,8 +35,8 @@ sup {
 }
 
 p {
-    margin-bottom: 1em;
-    margin-top: 1em;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
     word-break: break-word;
 }
 
@@ -76,13 +76,13 @@ h4 {
 h3 svg {
     width: 35px;
     height: 35px;
-    margin-right: 10px;
+    margin-inline-end: 10px;
 }
 
 h4 svg {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin-inline-end: 10px;
 }
 
 a {
@@ -208,7 +208,7 @@ input {
     color: #4a4a4a;
     padding: 6px 10px;
     /* The 6px vertically centers text on FF, ignored by Webkit */
-    margin-bottom: 10px;
+    margin-block-end: 10px;
     background-color: var(--purewhite);
     border: none;
     border-radius: 4px;
@@ -231,7 +231,7 @@ label,
 legend,
 fieldset {
     display: block;
-    margin-bottom: .5rem;
+    margin-block-end: 0.5rem;
     font-weight: 600;
 }
 
@@ -247,8 +247,8 @@ fieldset {
     font-family: var(--cbr);
     font-size: 1.4em;
     color: var(--tertiary);
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
 }
 
 img,
@@ -268,12 +268,12 @@ blockquote {
 figcaption {
     font-size: 0.9em;
     text-align: center;
-    margin-top: 0.5em;
+    margin-block-start: 0.5em;
     color: var(--offwhite-subtle);
 }
 
 table {
-    margin-bottom: 10px;
+    margin-block-end: 10px;
     width: 100%;
 }
 
@@ -308,7 +308,7 @@ th {
 .pagination {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-block-end: 10px;
 }
 
 .grid-2 {

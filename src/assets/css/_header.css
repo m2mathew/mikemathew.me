@@ -1,0 +1,127 @@
+.header-wrapper {
+    padding-bottom: 10px;
+    background-color: var(--bg-darker);
+}
+
+header.main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.main {
+    overflow: auto;
+    padding: 10px 0 0 0;
+}
+
+header.main h1 {
+    margin: 0;
+    margin-top: -10px;
+    color: var(--offwhite);
+    transition: text-shadow 0.5s ease;
+    text-transform: lowercase;
+    font-feature-settings: 'ss01';
+}
+
+header.main a {
+    color: var(--offwhite);
+    text-decoration: none;
+    font-family: var(--cr);
+}
+
+header.main a:hover {
+    color: var(--primary);
+}
+
+.main__title a {
+    color: var(--offwhite);
+    text-decoration: none;
+    font-family: var(--cr);
+}
+
+.main__title .logo {
+    border: 2px solid var(--offwhite);
+    border-radius: 5px;
+    margin-inline-end: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.main__title .logo svg {
+    width: 60%;
+    height: 60%;
+    margin-inline-start: 3px;
+}
+
+.main__title a {
+    display: flex;
+    align-items: center;
+}
+
+.main__title a:hover {
+    color: var(--offwhite);
+    text-shadow: var(--double-shadow);
+}
+
+.main__title a:hover .logo {
+    color: var(--offwhite);
+    box-shadow: var(--double-shadow);
+}
+
+.main__title .fullstop {
+    display: none;
+}
+
+@media (max-width: 290px) {
+    .main__title h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 435px) {
+    .main__title .surname {
+        display: none;
+    }
+
+    .main__title .fullstop {
+        display: inline;
+    }
+}
+
+@media (max-width: 610px) {
+    .main__links span {
+        display: none;
+    }
+}
+
+.main__links svg {
+    width: 1em;
+    height: 1em;
+    margin-inline-end: 5px;
+}
+
+.main__links {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.main__links a {
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+    line-height: 1px;
+    justify-content: flex-end;
+}
+
+.main__links span {
+    margin-block-start: -3px;
+}
+
+.main__links a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}

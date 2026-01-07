@@ -2,4 +2,8 @@
 @import "_reset.css";
 @import "_variables.css";
 @import "_base.css";
+@import "_container.css";
+@import "_header.css";
+@import "_nav.css";
 @import "_footer.css";
+@import "_home.css";
