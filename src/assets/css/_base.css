@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Cartridge-BoldRough';
-    src: url('/assets/fonts/Cartridge-BoldRough.woff2 ') format('woff2');
+    font-family: 'Turbeau-Regular';
+    src: url('/assets/fonts/Turbeau-Regular.woff2 ') format('woff2');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cartridge-Rough';
-    src: url('/assets/fonts/Cartridge-Rough.woff2 ') format('woff2');
+    font-family: 'Turbeau-Semibold';
+    src: url('/assets/fonts/Turbeau-Semibold.woff2 ') format('woff2');
     font-display: swap;
 }
 
@@ -53,7 +53,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: var(--cbr);
+    font-family: var(--tb-sb);
     color: var(--offwhite);
 }
 
@@ -244,7 +244,7 @@ fieldset {
 }
 
 .details summary {
-    font-family: var(--cbr);
+    font-family: var(--tb-sb);
     font-size: 1.4em;
     color: var(--tertiary);
     margin-block-end: 10px;

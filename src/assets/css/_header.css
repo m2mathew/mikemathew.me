@@ -20,13 +20,16 @@ header.main h1 {
     color: var(--offwhite);
     transition: text-shadow 0.5s ease;
     text-transform: lowercase;
+}
+
+header.main h1 > .alt {
     font-feature-settings: 'ss01';
 }
 
 header.main a {
     color: var(--offwhite);
     text-decoration: none;
-    font-family: var(--cr);
+    font-family: var(--tb-reg);
 }
 
 header.main a:hover {
@@ -36,7 +39,7 @@ header.main a:hover {
 .main__title a {
     color: var(--offwhite);
     text-decoration: none;
-    font-family: var(--cr);
+    font-family: var(--tb-reg);
 }
 
 .main__title .logo {
@@ -70,10 +73,6 @@ header.main a:hover {
 .main__title a:hover .logo {
     color: var(--offwhite);
     box-shadow: var(--double-shadow);
-}
-
-.main__title .fullstop {
-    display: none;
 }
 
 @media (max-width: 290px) {
