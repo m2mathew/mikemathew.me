@@ -14,6 +14,16 @@
     box-sizing: border-box;
 }
 
+/* High contrast selection because it can help visually-impaired
+folks read the text easier */
+::selection {
+  color: var(--nearblack);
+
+  /* We set this as an RGBA because that’s how you get a solid color, by using 0.99
+   alpha value. Browsers are wild. */
+  background: var(--secondary);
+}
+
 body {
     line-height: 1.6;
     padding: 0;
@@ -41,10 +51,6 @@ p {
 }
 
 h2 {
-    /* background: url(/assets/img/path.svg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: auto 15px; */
     text-shadow: -2px 2px 1px rgba(227, 61, 148, 0.7);
     word-wrap: break-word;
 }
