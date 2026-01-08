@@ -1,5 +1,7 @@
-import shortcodes from './config/shortcodes.js'
+import collections from './config/collections.js'
+import dateFilters from './config/filters/date.js'
 import plugins from './config/plugins.js'
+import shortcodes from './config/shortcodes.js'
 
 export default (async function (eleventyConfig) {
   // passthrough
@@ -15,6 +17,11 @@ export default (async function (eleventyConfig) {
   // shortcodes
   Object.keys(shortcodes).forEach(shortcodeName => {
     eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName])
+  })
+
+  // collections
+  Object.keys(collections).forEach(collectionName => {
+      eleventyConfig.addCollection(collectionName, collections[collectionName])
   })
 
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true })
