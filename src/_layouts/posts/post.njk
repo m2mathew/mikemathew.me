@@ -1,0 +1,95 @@
+---
+layout: base
+---
+
+<a class="u-url" style="display:none" href="https://mikemathew.me{{ page.url | stripIndex }}"></a>
+<img class="u-photo" src="/assets/indieweb/avatar.jpg" alt="Mike Mathew's avatar" style="display: none">
+
+<span class="post e-content">
+    {%- set isOldPost -%}{{ page.date | isOldPost }}{%- endset -%}
+    {% if isOldPost == "true" and '/blog' in page.url %}
+        <aside class="alert">
+            <div class="alert-icon">
+                <svg class="icon alert-calendar">
+                    <use xlink:href="#calendar"></use>
+                </svg>
+            </div>
+            <p>This post is over {{ page.date | diffInYears }} years old and may contain outdated opinions or incorrect information. The takes are still hot as hell though ❤️‍🔥</p>
+        </aside>
+    {% endif %}
+    {% if rssClub or repost or note %}
+        {% include 'post_notes.njk' %}
+    {% endif %}
+    {% if link and 'boxd' not in link %}
+        <aside class="alert">
+            <div class="alert-icon">
+                <svg class="icon"><use xlink:href="#link"></use></svg>
+            </div>
+            <a style="font-weight: bold;" href="{{ link }}">{{ title }} &nearrow;</a>
+        </aside>
+    {% endif %}
+
+    {% set almanacImage %}{{ { mediaType: mediaType, tmdbid: tmdbid, giantbombid: giantbombid, customImage: customImage, isbn13: isbn13 } | getAlmanacImage }}{% endset %}
+
+    {% if almanacImage %}
+        <div class="almanac-poster-wrap">
+            <hyper-card class="almanac-single-poster" style="--hypercard-scale: 1.03">
+                <img src="{{ almanacImage }}" alt="{{ title }}">
+            </hyper-card>
+        </div>
+    {% endif %}
+
+    {% if poster %}
+        <div class="almanac-poster-wrap">
+            <hyper-card class="almanac-single-poster" style="--hypercard-scale: 1.03">
+                <img src="{{ poster }}" alt="{{ title }}">
+            </hyper-card>
+        </div>
+    {% endif %}
+
+	{{ content | safe }}
+
+    {% include 'almanac_previous.njk' %}
+</span>
+
+{% if postType === 'note' %}
+    <p><small><a href="/posse">Why is this identical to what's on Mastodon?</a></small></p>
+{% endif %}
+
+<footer>
+    {% if postType !== 'almanac' %}
+        <div class="bmac">
+            <p>If you like this post or one of my projects you can <a href="/coffee">buy me a coffee</a> 💖</p>
+        </div>
+    {% endif %}
+
+    <p class="footer-social"><a href="https://social.lol/@robb"><svg class="icon ic-mastodon">
+        <use xlink:href="#mastodon"></use>
+    </svg>Follow me on Mastodon</a> <a href="/subscribe"><svg class="icon ic-rss">
+        <use xlink:href="#rss"></use>
+    </svg>Subscribe with RSS</a></p>
+
+    {% if nextPost.url %}
+		<p class="ctr">
+			<strong>Next</strong>:
+			<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+		</p>
+	{% endif %}
+	{% if prevPost.url %}
+		<p class="ctr">
+			<strong>Previously</strong>:
+			<a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+		</p>
+	{% endif %}
+</footer>
+
+{# {% if postType !== 'note' %}
+    {%- set webmentionUrl -%}{{ page.url | stripIndex }}{%- endset -%}
+    {% include 'webmentions.njk' %}
+{% endif %} #}
+
+{# {% if postType === 'post' %}
+    {%- set pageUrl -%}{{ page.url | stripIndex }}{%- endset -%} #}
+    {# {%- set popular = popularPosts(5, pageUrl) -%} #}
+    {# {% include 'popular_posts.njk' %}
+{% endif %} #}
