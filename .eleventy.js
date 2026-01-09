@@ -4,7 +4,11 @@ import dateFilters from './config/filters/date.js';
 import plugins from './config/plugins.js';
 import shortcodes from './config/shortcodes.js';
 
-import slugify from 'slugify';
+// Markdown
+import markdownIt from 'markdown-it';
+import markdownItFootnote from 'markdown-it-footnote';
+import markdownItFigCaptions from 'markdown-it-image-figures';
+import markdownItGithubAlerts from 'markdown-it-github-alerts';
 
 export default (async function (eleventyConfig) {
   // Toggle the filter below to use this to debug nunjucks data:
@@ -12,6 +16,21 @@ export default (async function (eleventyConfig) {
   // eleventyConfig.addFilter('log', value => {
   //   console.log(':: log :: ', value)
   // });
+
+  // markdown setup
+  const markdownItOptions = {
+    breaks: true, // Convert '\n' in paragraphs into <br>
+    html: true, // Enable HTML tags in source
+    linkify: true // Auto-convert URL-like text to links
+  };
+
+  // Use plugins
+  const markdownConfig = markdownIt(markdownItOptions)
+    .use(markdownItFootnote)
+    .use(markdownItGithubAlerts)
+    .use(markdownItFigCaptions, { figcaption: true });
+
+  eleventyConfig.setLibrary('md', markdownConfig);
 
   // passthrough
   ['src/assets'].forEach(path => {
