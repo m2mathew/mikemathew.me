@@ -14,15 +14,17 @@
   "author": "Mike Mathew",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy": "^v4.0.0-alpha.6",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0",
     "luxon": "^3.7.2",
-    "marked": "^17.0.1"
+    "marked": "^17.0.1",
+    "slugify": "^1.6.6"
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^1.0.5",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
+    "markdown-it": "^14.1.0",
     "prettier": "^3.7.4"
   },
   "lint-staged": {
