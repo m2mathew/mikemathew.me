@@ -17,6 +17,8 @@
     "@11ty/eleventy": "^v4.0.0-alpha.6",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0",
     "luxon": "^3.7.2",
+    "markdown-it-github-alerts": "^1.0.0",
+    "markdown-it-image-figures": "^2.1.1",
     "marked": "^17.0.1",
     "slugify": "^1.6.6"
   },
@@ -25,6 +27,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "markdown-it": "^14.1.0",
+    "markdown-it-footnote": "^4.0.0",
     "prettier": "^3.7.4"
   },
   "lint-staged": {
