@@ -1,0 +1,82 @@
+---
+layout: base
+---
+
+<style>
+    .collection-grid-container {
+        margin-bottom: 20px;
+    }
+
+    .collection-grid-container summary:hover {
+        cursor: pointer;
+    }
+
+    .collection-grid-container summary {
+        margin-bottom: 30px;
+    }
+
+    .collection-grid {
+        display: grid;
+        grid-template-columns: repeat(5, calc(20% - 0.75em));
+        grid-gap: 1em;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 650px)
+    {
+        .collection-grid {
+            grid-template-columns: repeat(3, calc(33% - 0.75em));
+        }
+    }
+
+    .collection-item-wrapper {
+        text-align: center;
+    }
+
+    .collection-image-wrapper {
+        height: 170px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .collection-item-wrapper img {
+        transition: 0.2s linear;
+        max-height: 200px;
+        margin: 0 auto;
+    }
+
+    .collection-item-wrapper img:hover {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+
+    .collection-image-wrapper a {
+        border: none;
+        height: 170px;
+    }
+
+    .collection-image-wrapper img {
+        max-height: 100%;
+    }
+
+    .collection-label {
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+
+<p><small><a href="#" id="expand-all" data-to="true">Toggle All</small></a></p>
+
+<script>
+    const expandAll = document.getElementById('expand-all')
+    expandAll.addEventListener('click', (e) => {
+        e.preventDefault()
+        const to = expandAll.dataset.to === 'true'
+        expandAll.dataset.to = !to
+        Array.from(document.getElementsByTagName('details')).forEach(d => d.open = to)
+    })
+</script>
+
+{{ content | safe }}
