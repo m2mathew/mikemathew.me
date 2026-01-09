@@ -1,6 +1,8 @@
 ---
 title: "And In This Corner..."
-date: "2015-07-31"
+date: "2015-07-31T00:00:00.000Z"
+tags:
+  - Personal
 ---
 
 I am Mike Mathew, and you have stumbled into my corner of the interwebs. Welcome. 👋
