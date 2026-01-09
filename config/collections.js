@@ -18,6 +18,9 @@ export const posts = (eleventyCollection) => {
     posts[i].data['nextPost'] = nextPost;
     posts[i].data['prevPost'] = prevPost;
   }
+
+  console.log('posts', posts[0].data.date.getFullYear());
+
   return posts;
 };
 
