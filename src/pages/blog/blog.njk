@@ -39,6 +39,7 @@ eleventyNavigation:
 {% set currentYear = 1000 %}
 
 {%- for post in collections.posts %}
+    {% set postYear = post.data.date %}
     {% set postYear = post.data.date.getFullYear() %}
 
     {% if postYear != currentYear %}
