@@ -6,15 +6,15 @@ nav.main {
 
 nav.main .container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 7px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
     margin-block-end: 5px;
 }
 
 @media (max-width: 550px) {
     nav.main .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -29,7 +29,10 @@ nav.main a {
     font-family: var(--tb-sb);
     text-align: center;
     border-bottom: none;
-    border-radius: 5px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 2px;
     padding: 2px 0;
     text-decoration: none;
     box-shadow: var(--double-shadow);
