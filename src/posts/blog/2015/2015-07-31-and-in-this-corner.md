@@ -1,6 +1,6 @@
 ---
 title: "And In This Corner..."
-date: "2015-07-31T00:00:00.000Z"
+date: 2015-07-31T00:00:00.000Z
 tags:
   - Personal
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Switching Gears"
-date: "2015-08-01T00:00:00.000Z"
+date: 2015-08-01T00:00:00.000Z
 tags:
   - Personal
 ---
