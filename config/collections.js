@@ -3,6 +3,16 @@ const buildPath = (type) => {
   return `src/posts/${type}/**/*.md`;
 };
 
+export const homePagePosts = (collectionApi) => {
+  return collectionApi
+    .getFilteredByGlob(buildPath('blog'))
+    .filter((p) => {
+      return !p.data.rssClub;
+    })
+    .reverse()
+    .slice(0, 5);
+};
+
 // blog post
 export const posts = (eleventyCollection) => {
   let posts = eleventyCollection
@@ -23,5 +33,6 @@ export const posts = (eleventyCollection) => {
 };
 
 export default {
+  homePagePosts,
   posts,
 };
