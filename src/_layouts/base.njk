@@ -59,7 +59,7 @@
                 {% endif %}
                 <div>
                   {%- for tag in tags | sort -%}
-                    <a class="p-category" href="/blog/tags/{{ tag | slug }}">#{{ tag }}</a>{% if loop.index < tags.length %}&nbsp;&nbsp; {% endif %}
+                    <a class="p-category" href="/blog/tags/{{ tag | slugify }}">#{{ tag }}</a>{% if loop.index < tags.length %}&nbsp;&nbsp; {% endif %}
                   {%- endfor -%}
                 </div>
               </div>

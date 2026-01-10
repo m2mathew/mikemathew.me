@@ -12,6 +12,6 @@ eleventyComputed:
 
 <ul>
 {%- for tag in collections.posts | getAllTags | sort -%}
-    <li><a href="/blog/tags/{{ tag | slug }}">#{{ tag }}</a> ({{ collections[tag].length }} post{% if collections[tag].length > 1 %}s{% endif %})</li>
+    <li><a href="/blog/tags/{{ tag | slugify }}">#{{ tag }}</a> ({{ collections[tag].length }} post{% if collections[tag].length > 1 %}s{% endif %})</li>
 {%- endfor -%}
 </ul>
