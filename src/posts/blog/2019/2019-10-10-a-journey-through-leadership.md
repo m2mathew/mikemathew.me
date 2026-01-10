@@ -1,5 +1,6 @@
 ---
 title: "A Journey Through Leadership"
+permalink: /blog/a-journey-through-leadership/index.html
 date: 2019-10-10T00:00:00.000Z
 tags:
   - Personal

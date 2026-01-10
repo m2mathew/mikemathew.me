@@ -1,5 +1,6 @@
 ---
 title: "Filling Each Day"
+permalink: /blog/filling-each-day/index.html
 date: 2015-12-16T00:00:00.000Z
 ---
 

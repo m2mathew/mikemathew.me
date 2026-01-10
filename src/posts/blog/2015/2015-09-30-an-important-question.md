@@ -1,5 +1,6 @@
 ---
 title: "An Important Question"
+permalink: /blog/an-important-question/index.html
 date: 2015-09-30T00:00:00.000Z
 tags:
   - Personal
