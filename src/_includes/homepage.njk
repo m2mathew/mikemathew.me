@@ -9,11 +9,11 @@
         <div class="titlebox">
             <h2 class="titlebox__name">Posts</h2>
             {%- for post in collections.homePagePosts %}
-                <div class="entryitem">
-                    <div class="entryitem--data">
+                <div class="post-list-item">
+                    <div class="post-list-item--data">
                         <a href="{{ post.url }}">{{ post.data.title }}</a>
                         <hr>
-                        <span class="entryitem--date">{{ post.data.date.toISOString() | isoDateOnly }}</span>
+                        <span class="post-list-item--date">{{ post.data.date.toISOString() | isoDateOnly }}</span>
                     </div>
                 </div>
             {% endfor %}
@@ -23,11 +23,11 @@
             <h2 class="titlebox__name">Links</h2>
             <p>Also coming soon…</p>
             {# {%- for post in collections.links.slice(0, 5) %}
-                <div class="entryitem">
-                    <div class="entryitem--data">
+                <div class="post-list-item">
+                    <div class="post-list-item--data">
                         <a href="{{ post.data.link }}">{{ post.data.title }} <span style="font-weight: normal;">&nearrow;</span></a>
                         <hr>
-                        <span class="entryitem--date">
+                        <span class="post-list-item--date">
                             <a href="{{ post.data.permalink | stripIndex }}">{{ post.data.date.toISOString() | isoDateOnly }}</a>
                         </span>
                     </div>

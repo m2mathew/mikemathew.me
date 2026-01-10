@@ -1,15 +1,15 @@
 
 
-<div class="entryitem">
-    <div class="entryitem--data">
+<div class="post-list-item">
+    <div class="post-list-item--data">
         <span>{% if post.data.featured %}⭐{% endif %} <a href="{{ post.data.permalink | stripIndex }}">{{ post.data.title }}</a></span>
         <hr>
         {% if post.data.postType != 'note' %}
-        <span class="entryitem--date">{{ post.data.date | postDateNoYear }}</span>
+        <span class="post-list-item--date">{{ post.data.date | postDateNoYear }}</span>
         {% endif %}
     </div>
     {% if post.data.excerpt and post.data.postType != 'note' %}
-        <div class="entryitem--excerpt">
+        <div class="post-list-item--excerpt">
             <p><em>{{ post.data.excerpt }}</em></p>
         </div>
     {% endif %}
