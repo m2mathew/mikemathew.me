@@ -51,7 +51,7 @@ p {
 }
 
 h2 {
-    text-shadow: -2px 2px 1px rgba(227, 61, 148, 0.7);
+    text-shadow: 1px 1px 0 var(--primary),2px 2px 0 var(--primary),3px 3px 0 var(--primary),4px 4px 0 var(--primary);
     word-wrap: break-word;
 }
 
@@ -64,7 +64,7 @@ h4 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8eem;
 }
 
 h3 {
