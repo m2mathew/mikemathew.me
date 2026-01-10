@@ -20,7 +20,7 @@ Then I realized that I had not named my function...and I thought about it with e
 
 To work on this, I started staying later than my peers and erasing the board and going through similar problems while muttering (sometimes even incoherently) to myself. I am getting better at whiteboarding (and muttering, I suspect).
 
-### Protoypes
+### Prototypes
 
 We talked about prototypes in JavaScript, and I recalled this from the dingy corner of my mind. A Codecademy lesson seemed to linger there in the shadows. Prototypes are essentially the perfect Platonic form of a function that exists under the layers of what the programmer is manipulating. The attributes and methods can be accessed under the "skin" of the machine.
 
