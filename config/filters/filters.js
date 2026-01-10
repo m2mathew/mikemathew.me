@@ -1,10 +1,14 @@
 import * as marked from 'marked';
 
-const stripIndex = (path) => {
-  if (!path) {
-    return '';
+const getAllTags = (collection) => {
+  // Set to de-dupe tags
+  let tagSet = new Set();
+
+  for (let item of collection) {
+    (item.data.tags || []).forEach((tag) => tagSet.add(tag));
   }
-  return path.replace('/index.html', '/');
+
+  return Array.from(tagSet);
 };
 
 const toLowerCase = (string) => {
@@ -19,8 +23,16 @@ const mdToHtml = (content) => {
   return marked.parse(content);
 };
 
+const stripIndex = (path) => {
+  if (!path) {
+    return '';
+  }
+  return path.replace('/index.html', '/');
+};
+
 export default {
+  getAllTags,
+  mdToHtml,
   stripIndex,
   toLowerCase,
-  mdToHtml,
 };
