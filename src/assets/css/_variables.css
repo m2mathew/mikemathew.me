@@ -4,6 +4,7 @@
     --bg-chroma: 0.1487;
     --bg-hue: 223;
 
+    --bg-darker: #1e1d1b;
     --offwhite: #F8F4E5;
     --offwhite-subtle: #c4baa8;
     --offwhite-subtle-extra: #57524a;
@@ -24,5 +25,5 @@
 
     --color-mastodon: #8373e7;
     --color-rss: #f36b2b;
-    --color-warning: #ffd43b;
+    --color-warning: #ffca77;
 }
