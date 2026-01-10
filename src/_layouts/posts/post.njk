@@ -29,27 +29,7 @@ layout: base
         </aside>
     {% endif %}
 
-    {# {% set almanacImage %}{{ { mediaType: mediaType, tmdbid: tmdbid, giantbombid: giantbombid, customImage: customImage, isbn13: isbn13 } | getAlmanacImage }}{% endset %}
-
-    {% if almanacImage %}
-        <div class="almanac-poster-wrap">
-            <hyper-card class="almanac-single-poster" style="--hypercard-scale: 1.03">
-                <img src="{{ almanacImage }}" alt="{{ title }}">
-            </hyper-card>
-        </div>
-    {% endif %}
-
-    {% if poster %}
-        <div class="almanac-poster-wrap">
-            <hyper-card class="almanac-single-poster" style="--hypercard-scale: 1.03">
-                <img src="{{ poster }}" alt="{{ title }}">
-            </hyper-card>
-        </div>
-    {% endif %} #}
-
 	{{ content | safe }}
-
-    {# {% include 'almanac_previous.njk' %} #}
 </span>
 
 {% if postType === 'note' %}
