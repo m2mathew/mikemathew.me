@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # Birth date (modify this to your birth date)
-# Also, yes, Harry Potter has the same birth date as me 🪄
 BIRTH_DATE="1978-07-31"
+
+# Color definitions
+PINK='\033[38;2;227;61;148m'  # #e33d94 in RGB
+RESET='\033[0m'
+BOLD='\033[1m'
 
 # Function to calculate weeks
 calculate_weeks() {
@@ -28,16 +32,16 @@ calculate_weeks() {
 
     # Display results
     echo ""
-    echo "═══════════════════════════════════════"
+    echo -e "${PINK}═══════════════════════════════════════${RESET}"
     echo "         LIFE WEEK CALCULATOR          "
-    echo "═══════════════════════════════════════"
+    echo -e "${PINK}═══════════════════════════════════════${RESET}"
     echo ""
     echo "Birth Date:     $BIRTH_DATE"
     echo "Target Date:    $target_date"
     echo ""
-    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    echo "Week number: $CURRENT_WEEK"
-    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    echo -e "${PINK}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
+    echo -e "${BOLD}Week number: $CURRENT_WEEK${RESET}"
+    echo -e "${PINK}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
     echo ""
     echo "That's $WEEKS complete weeks + $REMAINING_DAYS days"
     echo "Or approximately $YEARS years and $REMAINING_WEEKS weeks"
@@ -57,9 +61,9 @@ validate_date() {
 }
 
 # Main script
-echo "═══════════════════════════════════════"
+echo -e "${PINK}═══════════════════════════════════════${RESET}"
 echo "         LIFE WEEK CALCULATOR          "
-echo "═══════════════════════════════════════"
+echo -e "${PINK}═══════════════════════════════════════${RESET}"
 echo ""
 echo "Which date should we target?"
 echo ""
