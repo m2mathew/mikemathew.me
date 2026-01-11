@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "./node_modules/.bin/eleventy",
+    "lifeweek": "./cli/week_of_life.sh",
     "prepare": "husky",
     "prettier": "npx prettier ./config --write",
     "start": "./node_modules/.bin/eleventy --serve --quiet",
