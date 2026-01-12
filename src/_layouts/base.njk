@@ -12,69 +12,72 @@
 
 		{% include 'indieweb.njk' %}
 
-      <div class="header-wrapper">
-        {% include 'header.njk' %}
+    {% include 'header.njk' %}
 
-        {% include 'nav.njk' %}
-      </div>
+    {% if homepage %}
+      {% include 'homepage.njk' %}
+    {% else %}
+      {% include 'page_header.njk' %}
+    {% endif %}
 
-      {% if homepage %}
-        {% include 'homepage.njk' %}
-      {% else %}
-        {% include 'page_header.njk' %}
-      {% endif %}
+    <main>
+      <div class="
+          container
+          {% if wide %}container-m{% else %}container-sm{% endif %}
+          h-entry
+      ">
+        {% if postType == 'post' or postType == 'link' or postType == 'note' or postType == 'almanac' %}
 
-      <main>
-        <div class="
-            container
-            {% if wide %}container-m{% else %}container-sm{% endif %}
-            h-entry
-        ">
-            {% if postType == 'post' or postType == 'link' or postType == 'note' or postType == 'almanac' %}
-              <div class="post-meta">
+          <div class="post-meta">
+            <div>
+                <svg class="icon">
+                  <use xlink:href="#calendar"></use>
+                </svg>
+
+                <time class="dt-published" datetime="{{ page.date.toISOString() }}">{{ page.date | postDate }}</time>
+                {% if venue %}&nbsp;@ {{ venue }}{% endif %}{% if cinema or mediaType === "event" %}&nbsp;• 🎟️{% endif %}{% if platform %}&nbsp;• {{ platform }}{% endif %}{% if season %}&nbsp;• Season {{ season }}{% endif %}{% if year %}&nbsp;• ({{ year }}){% endif %}
+            </div>
+
+            {% if tmdbid %}
                 <div>
-                    <svg class="icon">
-                        <use xlink:href="#calendar"></use>
-                    </svg>
-                    <time class="dt-published" datetime="{{ page.date.toISOString() }}">{{ page.date | postDate }}</time>
-                    {% if venue %}&nbsp;@ {{ venue }}{% endif %}{% if cinema or mediaType === "event" %}&nbsp;• 🎟️{% endif %}{% if platform %}&nbsp;• {{ platform }}{% endif %}{% if season %}&nbsp;• Season {{ season }}{% endif %}{% if year %}&nbsp;• ({{ year }}){% endif %}
+                    <a href="https://www.themoviedb.org/{{ mediaType }}/{{ tmdbid }}" target="_blank">{{ title }} on TMDB</a>
                 </div>
-                {% if tmdbid %}
-                    <div>
-                        <a href="https://www.themoviedb.org/{{ mediaType }}/{{ tmdbid }}" target="_blank">{{ title }} on TMDB</a>
-                    </div>
-                {% endif %}
-                {% if giantbomburl %}
-                  <div>
-                    <a href="{{ giantbomburl }}" target="_blank">{{ title }} on GiantBomb</a>
-                  </div>
-                {% endif %}
-                {% if isbn13 %}
-                  <div>
-                    <a href="https://openlibrary.org/isbn/{{ isbn13 }}" target="_blank">{{ title }} on OpenLibrary</a>
-                  </div>
-                {% endif %}
-                {% if support %}
-                  <div>
-                    Support:&nbsp;{%- for s in support -%}{{ s }}{% if loop.index < support.length %}, {% endif %}{%- endfor -%}
-                  </div>
-                {% endif %}
-                <div>
-                  {%- for tag in tags | sort -%}
-                    <a class="p-category" href="/blog/tags/{{ tag | slugify }}">#{{ tag }}</a>{% if loop.index < tags.length %}&nbsp;&nbsp; {% endif %}
-                  {%- endfor -%}
-                </div>
+            {% endif %}
+
+            {% if giantbomburl %}
+              <div>
+                <a href="{{ giantbomburl }}" target="_blank">{{ title }} on GiantBomb</a>
               </div>
-          {% endif %}
+            {% endif %}
 
-          {{ content | safe }}
+            {% if isbn13 %}
+              <div>
+                <a href="https://openlibrary.org/isbn/{{ isbn13 }}" target="_blank">{{ title }} on OpenLibrary</a>
+              </div>
+            {% endif %}
 
-          <hr>
-        </div>
-      </main>
+            {% if support %}
+              <div>
+                Support:&nbsp;{%- for s in support -%}{{ s }}{% if loop.index < support.length %}, {% endif %}{%- endfor -%}
+              </div>
+            {% endif %}
 
-      {% include 'footer.njk' %}
+            <div>
+              {%- for tag in tags | sort -%}
+                <a class="p-category" href="/blog/tags/{{ tag | slugify }}">#{{ tag }}</a>{% if loop.index < tags.length %}&nbsp;&nbsp; {% endif %}
+              {%- endfor -%}
+            </div>
+          </div>
+        {% endif %}
 
-      {% include 'svg.njk' %}
+        {{ content | safe }}
+
+        <hr>
+      </div>
+    </main>
+
+    {% include 'footer.njk' %}
+
+    {% include 'svg.njk' %}
 	</body>
 </html>

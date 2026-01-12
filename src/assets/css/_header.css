@@ -1,8 +1,5 @@
-.header-wrapper {
-    padding-bottom: 10px;
-    background-color: var(--bg-darker);
-    border-bottom: 5px solid var(--secondary-glare);
-}
+/* .header__container {
+} */
 
 header.main .container {
     display: flex;
@@ -12,7 +9,10 @@ header.main .container {
 
 header.main {
     overflow: auto;
-    padding: 10px 0 0 0;
+    padding: 10px 0;
+    /* padding-bottom: 10px; */
+    background-color: var(--bg-darker);
+    border-bottom: 5px solid var(--secondary-glare);
 }
 
 header.main h1 {
@@ -52,7 +52,7 @@ header.main a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s;
 }
 
 .main__title .logo svg {
@@ -79,16 +79,6 @@ header.main a:hover {
 @media (max-width: 290px) {
     .main__title h1 {
         display: none;
-    }
-}
-
-@media (max-width: 435px) {
-    .main__title .surname {
-        display: none;
-    }
-
-    .main__title .fullstop {
-        display: inline;
     }
 }
 
