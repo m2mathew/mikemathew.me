@@ -10,11 +10,11 @@ layout: base
 
     {% if isOldPost == "true" and '/blog' in page.url %}
         <aside class="alert">
-            {# <div class="alert-icon">
+            <div class="alert-icon">
                 <svg class="icon alert-calendar">
                     <use xlink:href="#calendar"></use>
                 </svg>
-            </div> #}
+            </div>
             <p>This post is over {{ page.date | diffInYears }} years old. It may not reflect my current views. Enjoy any spicy takes! 🌶️</p>
         </aside>
     {% endif %}
@@ -40,27 +40,31 @@ layout: base
 {% endif %}
 
 <footer>
-    {% if postType !== 'almanac' %}
-        <div class="bmac">
-            <p>If you like this post or one of my projects you can <a href="/coffee">buy me a coffee</a> 💖</p>
-        </div>
-    {% endif %}
+  {% if postType !== 'almanac' %}
+    <div class="bmac">
+      <p>If you like this post or one of my projects you can <a href="/coffee">buy me a coffee</a> 💖</p>
+    </div>
+  {% endif %}
 
-    <p class="footer-social"><a href="https://social.lol/@drumsensei"><svg class="icon ic-mastodon">
-        <use xlink:href="#mastodon"></use>
-    </svg>Follow me on Mastodon</a> <a href="/subscribe"><svg class="icon ic-rss">
-        <use xlink:href="#rss"></use>
-    </svg>Subscribe with RSS</a></p>
+  <p class="footer-social">
+    <a href="https://social.lol/@drumsensei">
+    <svg class="icon ic-mastodon">
+    <use xlink:href="#mastodon"></use>
+    </svg>Follow me on Mastodon</a>
+    <a href="/subscribe"><svg class="icon ic-rss">
+    <use xlink:href="#rss"></use>
+    </svg>Subscribe with RSS</a>
+  </p>
 
-    {% if nextPost.url %}
-		<p class="ctr">
+  {% if nextPost.url %}
+		<p>
 			<strong>→ Next</strong> —
 			<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
 		</p>
 	{% endif %}
 
 	{% if prevPost.url %}
-		<p class="ctr">
+		<p>
 			<strong>← Previously</strong> —
 			<a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
 		</p>
