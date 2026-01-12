@@ -1,9 +1,10 @@
 .alert {
     position: relative;
     font-size: 0.8em;
+    border-radius: 5px;
     padding: 15px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-block-end: 20px;
+    margin-block-start: 10px;
     border: 1px solid var(--secondary);
     color: var(--offwhite);
 }
@@ -25,13 +26,13 @@
     margin: 5px 0;
 }
 
-.alert .alert-icon {
+/* .alert .alert-icon {
     position: absolute;
     top: -15px;
     left: 10px;
     background: var(--nearblack);
     padding: 5px;
-}
+} */
 
 .alert svg {
     width: 15px;
