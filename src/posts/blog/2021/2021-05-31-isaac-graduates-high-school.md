@@ -18,7 +18,7 @@ _[the scene unfolds...lava lamps and vinyl records can be seen...]_
 
 My mom Denise Mathew graduated from Berkner in 1979, about a year _after_ I was born. Her two brothers **Ricky Stephens** and **Tom Stephens** had already graduated with the first-ever class from Berkner in 1972.
 
-(As an aside, Ricky later married our aunt **Teri Odom Stephens**, another class of '72 grad who was in the band at Berkner — the first "Band Sweetheart" ever for the school and a great lady! For any Texas music historians reading, Teri's clarinet private lesson teacher in high school was Richard Floyd. Small world, eh?)
+(As an aside, Ricky later married **Teri Odom Stephens**, another class of '72 grad who was in the band at Berkner — the first "Band Sweetheart" ever for the school and a great lady! For any Texas music historians reading, Teri's clarinet private lesson teacher in high school was Richard Floyd. Small world, eh?)
 
 ### Some Time Later
 
