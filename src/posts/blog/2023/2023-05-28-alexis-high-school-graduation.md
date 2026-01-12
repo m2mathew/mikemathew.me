@@ -10,7 +10,7 @@ tags:
 
 ![Alexis posing in front of L.V. Berkner High School](https://res.cloudinary.com/drumsensei/image/upload/t_blog-post-image/v1748791673/blog/alexis-graduation-from-berkner-2023.jpg)
 
-(For a bit more context about why Berkner High School looms large in our family history, see this previous entry about Isaac's graduation from Berkner HS in 2021: [Isaac graduates high school](/isaac-graduates-from-berkner-high-school/).)
+(For a bit more context about why Berkner High School looms large in our family history, see this previous entry about Isaac's graduation from Berkner HS in 2021: [Isaac graduates high school](/blog/isaac-graduates-high-school/).)
 
 ### Meanwhile, in 2016
 
