@@ -12,7 +12,8 @@ h2 + .post-subtitle p {
     margin-top: 0;
 }
 
-.post-meta {
+.post__metadata {
+    border-radius: 5px;
     margin-block-start: 25px;
     margin-block-end: 32px;
     flex-direction: column;
@@ -22,18 +23,23 @@ h2 + .post-subtitle p {
     border-left: 2px solid var(--primary);
     background-color: var(--bg-darker);
     padding: 15px 0;
+    border: 1px solid var(--secondary-glare);
+    border-top-left-radius: 1px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 1px;
 }
 
-.post-meta div {
+.post__metadata div {
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.post-meta div svg {
+.post__metadata div svg {
     width: 20px;
     height: 20px;
-    margin-inline-end: 5px;
+    margin-inline-end: 8px;
 }
