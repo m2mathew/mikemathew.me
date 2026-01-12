@@ -1,7 +1,7 @@
 .header-wrapper {
     padding-bottom: 10px;
     background-color: var(--bg-darker);
-    border-bottom: 1px solid var(--offwhite-subtle);
+    border-bottom: 5px solid var(--secondary-glare);
 }
 
 header.main .container {

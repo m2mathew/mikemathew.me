@@ -18,35 +18,33 @@ nav.main .container {
     }
 }
 
-
 .nav-link,
 nav.main a {
-    text-decoration: none;
-    background-color: var(--offwhite);
-    color: var(--nav-text);
     text-transform: lowercase;
-    font-size: .9em;
+    font-size: 0.9em;
     font-family: var(--tb-sb);
     text-align: center;
     border-bottom: none;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 2px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 1px;
     padding: 2px 0;
     text-decoration: none;
-    box-shadow: var(--double-shadow);
-    transition: box-shadow .5s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .nav-link:hover, nav.main a:hover {
     box-shadow: none;
+    background-color: var(--offwhite);
+    color: var(--nav-text);
 }
 
 nav.main a.active {
-    padding-left: 5px;
+  padding-inline-start: 5px;
 }
-nav.main a.active:after {
-    content: '.';
-    color: var(--primary);
+nav.main a.active::before {
+  content: '> ';
+  font-family: var(--tb);
+  font-feature-settings: 'ss01';
 }
