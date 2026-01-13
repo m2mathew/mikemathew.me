@@ -11,4 +11,4 @@ author:
 
 This Archive link goes to a medium article. It's legit.
 
-Material Design has gotten monotonous. I'm glad to see some research around the revamped Material Design "Expression". Let's see if things get interesting again.
+To me Material Design has gotten monotonous. I'm glad to see some research around the revamped Material 3 Expressive. Let's see if things get interesting again.
