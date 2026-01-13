@@ -3,7 +3,6 @@ title: "Open Source Teaching"
 permalink: "/blog/open-source-teaching/index.html"
 date: 2015-08-02T00:00:00.500Z
 tags:
-  - Open Source
   - Teaching
 ---
 

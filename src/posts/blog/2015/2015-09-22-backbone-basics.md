@@ -4,7 +4,6 @@ permalink: "/blog/backbone-basics/index.html"
 date: 2015-09-22T00:00:00.500Z
 tags:
   - JavaScript
-  - Backbone
 ---
 
 ## Backbone makes it easier

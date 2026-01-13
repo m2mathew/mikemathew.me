@@ -3,7 +3,6 @@ title: "Some Words Add Little Value"
 permalink: "/blog/some-words-add-little-value/index.html"
 date: 2020-10-18T00:00:00.500Z
 tags:
-  - Writing
   - Communication
 ---
 

@@ -4,8 +4,6 @@ permalink: "/blog/uglify-might-get-ya/index.html"
 date: 2017-11-28T00:00:00.500Z
 tags:
   - JavaScript
-  - Webpack
-  - Uglify
 ---
 
 I still code almost every day. [My GitHub commits](https://github.com/m2mathew) don't tell the whole story, but I have taken _very_ few days off this year. Most of my work is in private repositories, but I have a few "learning" projects out there, too. Not burned out at all; definitely working hard and learning lots every day, every week!

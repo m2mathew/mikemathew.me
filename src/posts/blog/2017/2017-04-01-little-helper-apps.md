@@ -4,7 +4,6 @@ permalink: "/blog/little-helper-apps/index.html"
 date: 2017-04-01T00:00:00.500Z
 tags:
   - Productivity
-  - Mac
 ---
 
 My wife was recently telling me that she likes using the "little thingy" to change the size of the app running on her laptop. After a short conversation about the app, I started thinking that I use several "little thingy" apps on my Mac to help stay organized and quickly do some tasks. These apps save me a lot of time and help me stay focused on what's important.

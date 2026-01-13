@@ -3,7 +3,7 @@ title: "Apple Battery PR Dilemma"
 permalink: "/blog/apple-battery-pr-dilemma/index.html"
 date:  2018-01-16T00:00:00.500Z
 tags:
-  - Apple
+  - Technology
 ---
 
 Recently Apple, Inc. has been in the headlines due to an on-purpose software modification. This highly-publicized battery story limits the amount of work that the phone's processor will do...but only when the battery has reached a shortened lifespan. Forcing the phone into this modified state is how Apple is avoiding the problem that many people were facing: a phone that suddenly shut off under heavy load. The solution is smart and a great way to keep customers happy.
