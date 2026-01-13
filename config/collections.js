@@ -3,8 +3,9 @@ const buildPath = (type) => {
   return `src/posts/${type}/**/*.md`;
 };
 
-export const homePagePosts = (collectionApi) => {
-  return collectionApi
+// Posts shown on home page
+export const homePagePosts = (eleventyCollection) => {
+  return eleventyCollection
     .getFilteredByGlob(buildPath('blog'))
     .filter((p) => {
       return !p.data.rssClub;
@@ -13,7 +14,12 @@ export const homePagePosts = (collectionApi) => {
     .slice(0, 5);
 };
 
-// blog post
+// Links
+export const links = (eleventyCollection) => {
+  return eleventyCollection.getFilteredByGlob(buildPath('links')).reverse();
+};
+
+// Blog posts
 export const posts = (eleventyCollection) => {
   let posts = eleventyCollection
     .getFilteredByGlob(buildPath('blog'))
@@ -34,5 +40,6 @@ export const posts = (eleventyCollection) => {
 
 export default {
   homePagePosts,
+  links,
   posts,
 };
