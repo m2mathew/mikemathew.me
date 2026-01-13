@@ -1,0 +1,34 @@
+---
+pagination:
+  data: collections.links
+  size: 50
+  alias: link
+permalink: 'links/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}'
+layout: base
+eleventyNavigation:
+  key: Links
+  parent: Home
+eleventyComputed:
+    title: Links
+    subtitle: Some links that I find interesting or useful
+---
+
+{%- for link in pagination.items %}
+    <div class="entryitem">
+        <div class="entryitem--data">
+            <a href="{{ link.data.link }}">{{ link.data.title }} <span style="font-weight: normal;">&nearrow;</span></a>
+            <hr>
+            <span class="entryitem--date">
+                <a href="{{ link.data.permalink | stripIndex }}">{{ link.data.date.toISOString() | isoDateOnly }}</a>
+            </span>
+        </div>
+        <div class="entryitem--content">
+            {{ link.content | safe }}
+          </div>
+    </div>
+{% endfor -%}
+
+<div class="pagination box">
+    <div>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Newer Links</a>{% else %}{% endif %}</div>
+    <div>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Older Links</a>{% else %}{% endif %}</div>
+</div>
