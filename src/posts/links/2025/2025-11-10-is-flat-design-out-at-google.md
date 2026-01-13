@@ -1,7 +1,7 @@
 ---
 title: Is Flat Design Out For Google?
 permalink: /links/is-flat-design-out-for-google/index.html
-date: 2025-11-10
+date: 2025-11-10T00:00:00.500Z
 link: https://archive.ph/3Je32
 author:
     name: Benjamin Walker
