@@ -1,7 +1,7 @@
 ---
 title: "Apple Battery PR Dilemma"
 permalink: "/blog/apple-battery-pr-dilemma/index.html"
-date:  2018-01-16T00:00:00.000Z
+date:  2018-01-16T00:00:00.500Z
 tags:
   - Apple
 ---

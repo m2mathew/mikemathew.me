@@ -1,7 +1,7 @@
 ---
 title: "Staying Connected"
 permalink: "/blog/staying-connected/index.html"
-date: 2015-12-03T00:00:00.000Z
+date: 2015-12-03T00:00:00.500Z
 tags:
   - Personal
   - Productivity

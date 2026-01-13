@@ -1,7 +1,7 @@
 ---
 title: "Final Push"
 permalink: "/blog/final-push/index.html"
-date: 2015-11-10T00:00:00.000Z
+date: 2015-11-10T00:00:00.500Z
 tags:
   - Coding
 ---

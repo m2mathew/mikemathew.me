@@ -1,7 +1,7 @@
 ---
 title: "Building an Image Gallery"
 permalink: "/blog/building-an-image-gallery/index.html"
-date: 2015-09-17T00:00:00.000Z
+date: 2015-09-17T00:00:00.500Z
 tags:
   - Coding
 ---

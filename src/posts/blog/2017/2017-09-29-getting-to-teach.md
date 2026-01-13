@@ -1,7 +1,7 @@
 ---
 title: "Getting to Teach"
 permalink: "/blog/getting-to-teach/index.html"
-date: 2017-09-29T00:00:00.000Z
+date: 2017-09-29T00:00:00.500Z
 tags:
   - Music
   - Teaching

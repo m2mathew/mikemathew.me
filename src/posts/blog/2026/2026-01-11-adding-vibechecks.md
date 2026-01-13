@@ -1,7 +1,7 @@
 ---
 title: "Adding VibeChecks"
 permalink: /blog/adding-vibechecks/index.html
-date: 2026-01-11T00:00:00.000Z
+date: 2026-01-11T00:00:00.500Z
 tags:
   - VibeCheck
 ---

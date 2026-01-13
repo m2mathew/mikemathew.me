@@ -1,7 +1,7 @@
 ---
 title: "Relearning Problem Solving"
 permalink: "/blog/relearning-problem-solving/index.html"
-date: 2015-10-16T00:00:00.000Z
+date: 2015-10-16T00:00:00.500Z
 tags:
   - Coding
   - Learning

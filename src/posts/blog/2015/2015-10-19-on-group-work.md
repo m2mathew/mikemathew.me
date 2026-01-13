@@ -1,7 +1,7 @@
 ---
 title: "On Group Work"
 permalink: "/blog/on-group-work/index.html"
-date: 2015-10-19T00:00:00.000Z
+date: 2015-10-19T00:00:00.500Z
 tags:
   - Coding
   - Learning

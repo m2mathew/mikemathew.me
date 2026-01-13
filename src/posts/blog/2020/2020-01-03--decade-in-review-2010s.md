@@ -1,7 +1,7 @@
 ---
 title: "Decade in Review: 2010s"
 permalink: "/blog/decade-in-review-2010s/index.html"
-date: 2020-01-03T00:00:00.000Z
+date: 2020-01-03T00:00:00.500Z
 tags:
   - Personal
 ---

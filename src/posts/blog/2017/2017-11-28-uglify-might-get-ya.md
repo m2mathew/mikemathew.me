@@ -1,7 +1,7 @@
 ---
 title: "Uglify Might Get Ya"
 permalink: "/blog/uglify-might-get-ya/index.html"
-date: 2017-11-28T00:00:00.000Z
+date: 2017-11-28T00:00:00.500Z
 tags:
   - JavaScript
   - Webpack

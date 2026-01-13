@@ -1,7 +1,7 @@
 ---
 title: "Out of Practice"
 permalink: "/blog/out-of-practice/index.html"
-date: 2016-10-17T00:00:00.000Z
+date: 2016-10-17T00:00:00.500Z
 tags:
   - Music
   - Practice

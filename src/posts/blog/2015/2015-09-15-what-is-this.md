@@ -1,7 +1,7 @@
 ---
 title: "What Is This?"
 permalink: "/blog/what-is-this/index.html"
-date: 2015-09-15T00:00:00.000Z
+date: 2015-09-15T00:00:00.500Z
 tags:
   - JavaScript
 ---

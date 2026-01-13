@@ -1,7 +1,7 @@
 ---
 title: "Parse for the Back End"
 permalink: "/blog/parse-for-the-back-end/index.html"
-date: 2015-10-08T00:00:00.000Z
+date: 2015-10-08T00:00:00.500Z
 tags:
   - Coding
   - Learning

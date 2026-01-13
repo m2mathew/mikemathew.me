@@ -1,7 +1,7 @@
 ---
 title: "Hackathon Retrospective"
 permalink: "/blog/hackathon-retrospective/index.html"
-date: 2015-09-28T00:00:00.000Z
+date: 2015-09-28T00:00:00.500Z
 tags:
   - Coding
   - Hackathon

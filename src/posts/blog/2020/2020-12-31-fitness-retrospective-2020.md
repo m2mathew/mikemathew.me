@@ -1,7 +1,7 @@
 ---
 title: "Fitness Retrospective 2020"
 permalink: "/blog/fitness-retrospective-2020/index.html"
-date: 2020-12-31T00:00:00.000Z
+date: 2020-12-31T00:00:00.500Z
 tags:
   - Personal
 ---

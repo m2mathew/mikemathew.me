@@ -1,7 +1,7 @@
 ---
 title: "Approaching Destination"
 permalink: "/blog/approaching-destination/index.html"
-date: 2015-11-04T00:00:00.000Z
+date: 2015-11-04T00:00:00.500Z
 tags:
   - Coding
 ---

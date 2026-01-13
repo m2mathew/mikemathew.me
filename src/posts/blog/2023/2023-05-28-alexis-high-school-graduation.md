@@ -1,7 +1,7 @@
 ---
 title: "Alexis High School Graduation"
 permalink: /blog/alexis-high-school-graduation/index.html
-date: 2023-05-28T00:00:00.000Z
+date: 2023-05-28T00:00:00.500Z
 tags:
   - Personal
 ---

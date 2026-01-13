@@ -1,7 +1,7 @@
 ---
 title: "Use a Pull Request Template in GitHub"
 permalink: "/blog/use-a-pull-request-template-in-github/index.html"
-date: 2020-10-14T00:00:00.000Z
+date: 2020-10-14T00:00:00.500Z
 tags:
   - Coding
   - Productivity

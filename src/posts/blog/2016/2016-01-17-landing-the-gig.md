@@ -1,7 +1,7 @@
 ---
 title: "Landing the Gig"
 permalink: "/blog/landing-the-gig/index.html"
-date: 2016-01-17T00:00:00.000Z
+date: 2016-01-17T00:00:00.500Z
 tags:
   - Career
 ---

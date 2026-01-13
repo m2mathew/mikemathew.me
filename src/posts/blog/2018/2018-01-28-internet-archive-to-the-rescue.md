@@ -1,7 +1,7 @@
 ---
 title: "Internet Archive to the Rescue"
 permalink: "/blog/internet-archive-to-the-rescue/index.html"
-date: 2018-01-28T00:00:00.000Z
+date: 2018-01-28T00:00:00.500Z
 tags:
   - Coding
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Finding Music Again"
 permalink: "/blog/finding-music-again/index.html"
-date: 2015-10-07T00:00:00.000Z
+date: 2015-10-07T00:00:00.500Z
 tags:
   - Music
 ---

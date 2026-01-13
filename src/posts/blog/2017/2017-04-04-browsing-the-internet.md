@@ -1,7 +1,7 @@
 ---
 title: "Browsing the Internet"
 permalink: "/blog/browsing-the-internet/index.html"
-date: 2017-04-04T00:00:00.000Z
+date: 2017-04-04T00:00:00.500Z
 tags:
   - Web Development
   - Browsers

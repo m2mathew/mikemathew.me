@@ -1,7 +1,7 @@
 ---
 title: "Isaac graduates high school"
 permalink: "/blog/isaac-graduates-high-school/index.html"
-date: 2021-05-31T00:00:00.000Z
+date: 2021-05-31T00:00:00.500Z
 tags:
   - Personal
 ---

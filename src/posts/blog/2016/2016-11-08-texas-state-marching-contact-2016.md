@@ -1,7 +1,7 @@
 ---
 title: "Texas State Marching Contest 2016"
 permalink: "/blog/texas-state-marching-contest-2016/index.html"
-date: 2016-11-08T00:00:00.000Z
+date: 2016-11-08T00:00:00.500Z
 tags:
   - Band
   - Music

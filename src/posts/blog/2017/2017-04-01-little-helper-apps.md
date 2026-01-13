@@ -1,7 +1,7 @@
 ---
 title: "Little Helper Apps"
 permalink: "/blog/little-helper-apps/index.html"
-date: 2017-04-01T00:00:00.000Z
+date: 2017-04-01T00:00:00.500Z
 tags:
   - Productivity
   - Mac

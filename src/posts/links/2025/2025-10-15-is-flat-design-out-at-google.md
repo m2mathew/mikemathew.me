@@ -9,4 +9,6 @@ author:
 
 ---
 
-This Archive link goes to a medium article. It's legit. I've been bored with Material Design for a while, so I'm glad to see the revamped Material Design "Expression". Let's see if things get interesting again.
+This Archive link goes to a medium article. It's legit.
+
+Material Design has gotten monotonous. I'm glad to see some research around the revamped Material Design "Expression". Let's see if things get interesting again.

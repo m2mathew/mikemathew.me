@@ -1,7 +1,7 @@
 ---
 title: "Staying Sane with a Long Commute"
 permalink: "/blog/staying-sane-with-a-long-commute/index.html"
-date: 2016-05-19T00:00:00.000Z
+date: 2016-05-19T00:00:00.500Z
 tags:
   - Podcasts
   - Music
