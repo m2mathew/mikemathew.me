@@ -14,15 +14,15 @@ eleventyComputed:
 ---
 
 {%- for link in pagination.items %}
-    <div class="entryitem">
-        <div class="entryitem--data">
+    <div class="post-list-item">
+        <div class="post-list-item--data">
             <a href="{{ link.data.link }}">{{ link.data.title }} <span style="font-weight: normal;">&nearrow;</span></a>
             <hr>
-            <span class="entryitem--date">
+            <span class="post-list-item--date">
                 <a href="{{ link.data.permalink | stripIndex }}">{{ link.data.date.toISOString() | isoDateOnly }}</a>
             </span>
         </div>
-        <div class="entryitem--content">
+        <div class="post-list-item--content">
             {{ link.content | safe }}
           </div>
     </div>
