@@ -115,11 +115,11 @@ export default function() {
 			// 	link: '/next',
 			// 	description: 'What I\'m up to next',
 			// },
-			// {
-			// 	title: 'uses',
-			// 	link: '/uses',
-			// 	description: 'All the things I use on a day-to-day basis',
-			// },
+			{
+				title: 'uses',
+				link: '/uses',
+				description: 'Things I use most days',
+			},
 			// {
 			// 	title: 'defaults',
 			// 	link: '/defaults',
