@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Turbeau-Regular';
-    src: url('/assets/fonts/Turbeau-Regular.woff2 ') format('woff2');
+    font-family: 'Clauthbound-Regular';
+    src: url('/assets/fonts/Clauthbound-Regular.woff2 ') format('woff2');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Turbeau-Semibold';
-    src: url('/assets/fonts/Turbeau-Semibold.woff2 ') format('woff2');
+    font-family: 'Clauthbound-Semibold';
+    src: url('/assets/fonts/Clauthbound-Semibold.woff2 ') format('woff2');
     font-display: swap;
 }
 
@@ -59,7 +59,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: var(--tb-sb);
+    font-family: var(--semibold);
     color: var(--offwhite);
 }
 
@@ -250,7 +250,7 @@ fieldset {
 }
 
 .details summary {
-    font-family: var(--tb-sb);
+    font-family: var(--semibold);
     font-size: 1.4em;
     color: var(--tertiary);
     margin-block-end: 10px;
