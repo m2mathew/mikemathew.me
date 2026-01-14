@@ -22,7 +22,7 @@ nav.main .container {
 nav.main a {
     text-transform: lowercase;
     font-size: 0.9em;
-    font-family: var(--tb-sb);
+    font-family: var(--semibold);
     text-align: center;
     border-bottom: none;
     border-top-left-radius: 1px;
@@ -32,6 +32,10 @@ nav.main a {
     padding: 2px 0;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
+}
+
+nav.main a > .alt {
+    font-feature-settings: 'ss01';
 }
 
 .nav-link:hover, nav.main a:hover {

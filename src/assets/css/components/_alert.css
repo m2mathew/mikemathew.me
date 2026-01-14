@@ -14,7 +14,7 @@
 }
 
 .alert h1 {
-    font-family: var(--tb-reg);
+    font-family: var(--base);
 }
 
 .alert p:first-child,

@@ -25,7 +25,7 @@
     border-top: 1px solid var(--purewhite);
     border-bottom: 1px solid var(--purewhite);
     padding: 10px 0;
-    font-family: var(--tb-reg);
+    font-family: var(--base);
     width: 100%;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
