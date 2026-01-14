@@ -135,6 +135,11 @@ export default function() {
 				link: '/posse',
 				description: 'My POSSE strategy',
 			},
+			{
+				title: 'chipotle',
+				link: '/chipotle',
+				description: 'My Chipotle order',
+			},
 			// {
 			// 	title: 'save',
 			// 	link: '/save',
