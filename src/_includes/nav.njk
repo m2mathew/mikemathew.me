@@ -1,8 +1,20 @@
 <nav class="main">
     <div class="container container-m">
-        <a href="/blog" {% if ('/blog' in page.url) %}class="active"{% endif %}>Blog</a>
-        <a href="/projects" {% if ('/projects' in page.url) %}class="active"{% endif %}>Projects</a>
-        <a href="/now" {% if ('/now' in page.url) and ('/blog/now' not in page.url) %}class="active"{% endif %}>/now</a>
-        <a href="/explore" {% if ('/explore' in page.url) %}class="active"{% endif %}>Explore</a>
+        <a href="/blog" {% if ('/blog' in page.url) %}class="active"{% endif %}>
+          {% if ('/blog' in page.url) %}<span class="alt">&#8225;</span> {% endif %}
+          Blog
+        </a>
+        <a href="/projects" {% if ('/projects' in page.url) %}class="active"{% endif %}>
+          {% if ('/projects' in page.url) %}<span class="alt">&#8225;</span> {% endif %}
+          Projects
+        </a>
+        <a href="/now" {% if ('/now' in page.url) and ('/blog/now' not in page.url) %}class="active"{% endif %}>
+          {% if ('/now' in page.url) %}<span class="alt">&#8225;</span> {% endif %}
+          /now
+        </a>
+        <a href="/explore" {% if ('/explore' in page.url) %}class="active"{% endif %}>
+          {% if ('/explore' in page.url) %}<span class="alt">&#8225;</span> {% endif %}
+          Explore
+        </a>
     </div>
 </nav>
