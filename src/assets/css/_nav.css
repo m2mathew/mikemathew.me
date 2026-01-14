@@ -47,8 +47,3 @@ nav.main a > .alt {
 nav.main a.active {
   padding-inline-start: 5px;
 }
-nav.main a.active::before {
-  content: '> ';
-  font-family: var(--tb);
-  font-feature-settings: 'ss01';
-}
