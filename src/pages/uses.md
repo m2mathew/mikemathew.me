@@ -34,10 +34,12 @@ eleventyNavigation:
   - I work in PostgreSQL a bunch, and this app helps me query the databases.
 - [Warp](https://www.warp.dev/) terminal
   - Modern terminal. I work around the "AI" bits as those don't interest me.
-- Arc Browser
+- [Arc Browser](https://arc.net/)
+  - This browser immediately clicked with me.
 - [TextExpander](https://textexpander.com/)
   - I'm on a decade-plus streak of using snippets to save time 💪
-- 1Password
+- [1Password](https://1password.com/)
+  - Whole family uses it.
 - [Rectangle](https://rectangleapp.com/)
   - Wrangle the windows.
 - [Hand Mirror](https://handmirror.app/)
