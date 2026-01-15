@@ -10,7 +10,7 @@ export default function() {
 			{
 				title: 'Blog',
 				link: '/blog',
-				description: 'Post that are longer',
+				description: 'Posts that are longer',
 				icon: 'blog',
 			},
 			// {
