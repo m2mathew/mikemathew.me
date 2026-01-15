@@ -28,14 +28,18 @@ eleventyNavigation:
 
 ### Software
 
+- [Omnifocus](https://www.omnigroup.com/omnifocus)
+  - Manage TODOs, complex projects, and everything in between
 - [Visual Studio Code](https://code.visualstudio.com/)
   - My go-to code editor, though I toy with the idea of using [WebStorm](https://www.jetbrains.com/webstorm/).
+- [Arc Browser](https://arc.net/)
+  - This browser immediately clicked with me.
 - [DataGrip](https://www.jetbrains.com/datagrip/) by JetBrains
   - I work in PostgreSQL a bunch, and this app helps me query the databases.
 - [Warp](https://www.warp.dev/) terminal
   - Modern terminal. I work around the "AI" bits as those don't interest me.
-- [Arc Browser](https://arc.net/)
-  - This browser immediately clicked with me.
+- [Mimestream](https://mimestream.com/)
+  - Gmail client but it looks like macOS Mail.app. The "unread" view is so useful.
 - [TextExpander](https://textexpander.com/)
   - I'm on a decade-plus streak of using snippets to save time 💪
 - [1Password](https://1password.com/)
@@ -44,3 +48,11 @@ eleventyNavigation:
   - Wrangle the windows.
 - [Hand Mirror](https://handmirror.app/)
   - Check out the scene before any video calls start.
+- [Ivory](https://tapbots.com/ivory/), a Mastodon client
+  - From the fine folks who made Tweetbot in days gone by.
+- [Cleanshot X](https://cleanshot.com/)
+  - Easy screenshots and GIFs :chefs-kiss:
+- [Easy CSV Editor](https://vdt-labs.com/easy-csv-editor/)
+  - So easy
+- [ClickUp](https://clickup.com/)
+  - We've been using this at Presto to manage tasks and as a Notion replacement. It's been pretty nice.
