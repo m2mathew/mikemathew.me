@@ -21,6 +21,13 @@ header.main h1 {
 
 header.main h1 > .alt {
     font-feature-settings: 'ss01';
+    transform: rotate(0deg);
+    transition: all 1s;
+  }
+
+header.main h1 > .alt:hover {
+  transform: rotate(90deg);
+    /* color: 'hotpink'; */
 }
 
 header.main a {
@@ -65,11 +72,6 @@ header.main a:hover {
 .main__title a:hover {
     color: var(--offwhite);
     text-shadow: var(--double-shadow);
-}
-
-.main__title a:hover .logo {
-    color: var(--offwhite);
-    box-shadow: var(--double-shadow);
 }
 
 @media (max-width: 290px) {
