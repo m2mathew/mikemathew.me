@@ -1,0 +1,53 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This is a JSON feed. Subscribe by copying the URL from the address bar into your newsreader.",
+    "title": "Mike Mathew • {{ name }} • JSON Feed",
+    "description": "{{ site.config.description }}",
+    "home_page_url": "https://mikemathew.me/",
+    "feed_url": "https://mikemathew.me/{{ permalink }}",
+    "authors": [
+        {
+            "name": "Mike Mathew",
+            "url": "https://mikemathew.me/",
+            "avatar": "https://mikemathew.me/assets/indieweb/avatar.jpg"
+        }
+    ],
+    "items" : [
+    {%- for post in collections[collectionName].slice(0, 50) -%}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    {
+        "id" : "{{ post.data.permalink }}",
+        "title": {{ post.data.title | dump | safe }},
+        "url": "https://mikemathew.me{{ post.data.permalink | stripIndex }}",
+        "content_html": {{ post.templateContent | renderContentForFeed(post) | dump | safe }},
+        "summary": {% if post.data.excerpt %}{{ post.data.excerpt | dump | safe }}{% else %}""{% endif %},
+        {% if post.data.postType === 'link' %}
+        "external_url": "{{ post.data.link }}",
+        "authors": [
+            {
+                "name": {% if post.data.author.name %}"{{ post.data.author.name }}",{% else %}null,{% endif %}
+                "url": {% if post.data.author.web %}"{{ post.data.author.web }}",{% else %}null,{% endif %}
+                "mastodon": {% if post.data.author.mastodon %}"{{ post.data.author.mastodon }}",{% else %}null,{% endif %}
+                "rss": {% if post.data.author.feed %}"{{ post.data.author.feed }}"{% else %}null{% endif %}
+            }
+        ],{% endif %}
+        "_knightposse": {
+            "about": "https://mikemathew.me/about/colophon/",
+            "text": {{ { "externalLink": post.data.postType === 'link', "season": post.data.season, "platform": post.data.platform, "mediaType": post.data.mediaType, "postType": post.data.postType, "title": post.data.title, "author": post.data.author, "link": post.data.link, "content": post.templateContent, "permalink": post.data.permalink | stripIndex } | makeTootText | dump | safe }},
+            "tags": {% if post.data.tags %}{{ post.data.tags | dump | safe }}{% else %}[]{% endif %},
+            "opengraph": "{{ post.url | getOpengraphUrl }}"
+        },
+        "date_published": "{{ post.data.date | dateForFeed }}",
+        "tags": {% if post.data.tags %}{{ post.data.tags | dump | safe }}{% else %}[]{% endif %},
+        "attachments": [
+            {%- for attachment in post.data.images -%}
+            {
+                "url": "{{ attachment.url }}",
+                "mime_type": "image/jpeg",
+                "title": {% if attachment.alt %}{{ attachment.alt | dump | safe }}{% else %}""{% endif %}
+            }{%- if not loop.last %},{% else %}{%- endif -%}
+            {%- endfor -%}
+        ]
+    }{% if not loop.last %},{% else %}{%- endif -%}
+    {%- endfor -%}
+]}
