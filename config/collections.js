@@ -3,6 +3,22 @@ const buildPath = (type) => {
   return `src/posts/${type}/**/*.md`;
 };
 
+export const blogTags = (eleventyCollection) => {
+  const allTags = [
+    ...eleventyCollection.getFilteredByGlob(buildPath('blog')),
+    // ...collectionApi.getFilteredByGlob(makePath('notes')),
+  ]
+    .reverse()
+    .reduce((tags, p) => {
+      if (p.data.tags && Array.isArray(p.data.tags)) {
+        return [...tags, ...p.data.tags];
+      }
+      return tags;
+    }, []);
+
+  return [...new Set(allTags)];
+};
+
 // Posts shown on home page
 export const homePagePosts = (eleventyCollection) => {
   return eleventyCollection
@@ -39,6 +55,7 @@ export const posts = (eleventyCollection) => {
 };
 
 export default {
+  blogTags,
   homePagePosts,
   links,
   posts,
