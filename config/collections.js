@@ -3,10 +3,18 @@ const buildPath = (type) => {
   return `src/posts/${type}/**/*.md`;
 };
 
+// Blog posts for RSS feed
+export const blogPostsForFeed = (eleventyCollection) => {
+  return eleventyCollection
+    .getFilteredByGlob(buildPath('blog'))
+    .reverse()
+    .slice(0, 50);
+};
+
 export const blogTags = (eleventyCollection) => {
   const allTags = [
     ...eleventyCollection.getFilteredByGlob(buildPath('blog')),
-    // ...collectionApi.getFilteredByGlob(makePath('notes')),
+    // ...collectionApi.getFilteredByGlob(buildPath('notes')),
   ]
     .reverse()
     .reduce((tags, p) => {
@@ -55,6 +63,7 @@ export const posts = (eleventyCollection) => {
 };
 
 export default {
+  blogPostsForFeed,
   blogTags,
   homePagePosts,
   links,
