@@ -140,6 +140,11 @@ export default function() {
 				link: '/chipotle',
 				description: 'My Chipotle order',
 			},
+			{
+				title: 'coffee',
+				link: '/coffee',
+				description: 'Buy Me a Coffee',
+			},
 			// {
 			// 	title: 'save',
 			// 	link: '/save',
