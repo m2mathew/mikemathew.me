@@ -108,7 +108,7 @@ export default function() {
 			{
 				title: 'now',
 				link: '/now',
-				description: 'What I\'m up to now',
+				description: 'What I\'m working on now',
 			},
 			// {
 			// 	title: 'next',
