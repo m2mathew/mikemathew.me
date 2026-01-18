@@ -30,6 +30,18 @@ export default function() {
           Beyond his day-to-day work, Mike also hosts the React Meetup, which speaks to his passion for the craft and the community. He takes initiative, leads by example, and always leaves things better than he found them. Mike is truly a top-tier engineer. 💪
         `
       },
+      {
+        date: '2024-12-15',
+        name: 'Anonymous',
+        text: `
+          As someone who comes from teaching, I have seen you really shine in teaching through your
+          PR reviews. You are always willing to have a conversation about why an engineer made the
+          decision they did and how they can get even better, without being demeaning. This is
+          something that is hard to accomplish all the time, and you continuously show up this way. As
+          someone who receives your PR reviews, I know through your feedback that you are working to
+          make us and the codebase better.
+        `
+      },
     ]
   };
 }
