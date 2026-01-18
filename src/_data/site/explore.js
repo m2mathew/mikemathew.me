@@ -54,6 +54,12 @@ export default function() {
 				description: 'Things I\'ve built',
 				icon: 'projects',
 			},
+			{
+				title: 'Testimonials',
+				link: '/testimonials',
+				description: 'Happy thoughts about me from others',
+				icon: 'projects',
+			},
 			// {
 			// 	title: 'Intersect',
 			// 	link: '/intersect',
@@ -110,11 +116,11 @@ export default function() {
 				link: '/now',
 				description: 'What I\'m working on now',
 			},
-			// {
-			// 	title: 'next',
-			// 	link: '/next',
-			// 	description: 'What I\'m up to next',
-			// },
+			{
+				title: 'contact',
+				link: '/contact',
+				description: 'Get in touch',
+			},
 			{
 				title: 'uses',
 				link: '/uses',
