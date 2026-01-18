@@ -64,17 +64,17 @@ h4 {
 }
 
 h2 {
-    font-size: 1.8eem;
+    font-size: 1.8rem;
 }
 
 h3 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     display: flex;
     align-items: center;
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     display: flex;
     align-items: center;
 }
@@ -264,11 +264,13 @@ video {
 }
 
 blockquote {
-    border-left: 2px solid var(--primary);
-    margin: 0 0 15px;
-    padding: 0 0 0 20px;
+    border-left: 4px solid var(--primary);
+    margin-block: 1rem 1.5rem;
+    padding-block: 1rem;
+    padding-inline-start: 2rem;
     font-style: italic;
     color: var(--offwhite-subtle);
+    background-color: var(--nearblack);
 }
 
 figcaption {
