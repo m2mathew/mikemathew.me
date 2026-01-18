@@ -268,9 +268,10 @@ blockquote {
     margin-block: 1rem 1.5rem;
     padding-block: 1rem;
     padding-inline-start: 2rem;
+    background-color: var(--nearblack);
     font-style: italic;
     color: var(--offwhite-subtle);
-    background-color: var(--nearblack);
+    white-space: break-spaces;
 }
 
 figcaption {
