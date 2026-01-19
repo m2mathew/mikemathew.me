@@ -1,0 +1,41 @@
+---
+title: testimonials
+subtitle: "Testimonials"
+layout: base
+permalink: 'testimonials/index.html'
+eleventyNavigation:
+  key: /testimonials
+  parent: Home
+---
+
+<p>
+  When I worked as a teacher, I kept a "Happy file" in a drawer in my desk. Some days were tough. That file contained notes and letters from students, parents, and team members that reminded me about the good work and positive impact I was having in the world.
+</p>
+
+<p>
+  This page serves as my digital "Happy file" and provides background info for anyone interested in working with me.
+</p>
+
+<h3>Share Your Feedback</h3>
+
+<p>
+  If you have any positive or constructive feedback, <a href="/contact">email me</a> your thoughts. I appreciate the gift of feedback.
+</p>
+
+<h3>Testimonials</h3>
+
+{%- for testimonial in site.testimonials.positive -%}
+  <div class="testimonial-item">
+    <div class="testimonial-item--data">
+      <time datetime="{{ testimonial.date }}">
+          {{ testimonial.date }}
+      </time>
+
+      <p>
+        from <strong>{{ testimonial.name }}</strong>
+      </p>
+    </div>
+
+    <blockquote>{{ testimonial.text }}</blockquote>
+  </div>
+{%- endfor -%}
