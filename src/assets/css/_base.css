@@ -264,14 +264,15 @@ video {
 }
 
 blockquote {
-    border-left: 4px solid var(--primary);
-    margin-block: 1rem 1.5rem;
-    padding-block: 1rem;
-    padding-inline-start: 2rem;
-    background-color: var(--nearblack);
-    font-style: italic;
-    color: var(--offwhite-subtle);
-    white-space: break-spaces;
+  border: 1px solid #3a3a3a;
+  border-left: 4px solid var(--primary);
+  padding-block: 1rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 1rem;
+  background-color: var(--nearblack);
+  font-style: italic;
+  color: var(--offwhite-subtle);
+  white-space: break-spaces;
 }
 
 figcaption {
@@ -296,12 +297,6 @@ td {
 td,
 th {
     padding: 3px 10px;
-}
-
-.logo-dot {
-    fill: var(--primary);
-    stroke: var(--primary);
-    color: var(--primary);
 }
 
 @media (max-width: 650px) {
