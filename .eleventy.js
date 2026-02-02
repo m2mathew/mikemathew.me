@@ -1,6 +1,7 @@
 import collections from './config/collections.js';
 import filters from './config/filters/filters.js';
 import dateFilters from './config/filters/date.js';
+import indiewebFilters from './config/filters/indieweb.js';
 import plugins from './config/plugins.js';
 import shortcodes from './config/shortcodes.js';
 
@@ -61,6 +62,11 @@ export default (async function (eleventyConfig) {
   Object.keys(dateFilters).forEach(filterName => {
       eleventyConfig.addFilter(filterName, dateFilters[filterName])
   });
+
+  // indieweb/posse filters
+  Object.keys(indiewebFilters).forEach(filterName => {
+      eleventyConfig.addFilter(filterName, indiewebFilters[filterName])
+  })
 
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
 

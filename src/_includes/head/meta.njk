@@ -1,0 +1,11 @@
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width" >
+<meta name="generator" content="{{ eleventy.generator }}">
+<title>{{ title or metaTitle | safe }}{% if title !== 'Mike Mathew' %} • Mike Mathew{% endif %}</title>
+<meta property="og:title" content="{{ title or metaTitle }}">
+<meta name="description" content="{% if excerpt %}{{ excerpt }}{% else %}{{ site.config.description }}{% endif %}">
+<meta property="og:description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.config.description }}{% endif %}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mikemathew.me{{ page.url }}">
+<meta property="og:image" content="{{ { url: page.url, attachments: attachments, permalink: permalink, date: page.date } | getOgImageUrl }}">
+<meta name="fediverse:creator" content="@drumsensei@social.lol">

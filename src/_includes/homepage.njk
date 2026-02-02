@@ -19,28 +19,30 @@
             {% endfor %}
             <a class="titlebox__link" href="/blog">All Posts &rarr;</a>
         </div>
-        <div class="titlebox">
-            <h2 class="titlebox__name">Links</h2>
-            <p>Also coming soon…</p>
-            {# {%- for post in collections.links.slice(0, 5) %}
-                <div class="post-list-item">
-                    <div class="post-list-item--data">
-                        <a href="{{ post.data.link }}">{{ post.data.title }} <span style="font-weight: normal;">&nearrow;</span></a>
-                        <hr>
-                        <span class="post-list-item--date">
-                            <a href="{{ post.data.permalink | stripIndex }}">{{ post.data.date.toISOString() | isoDateOnly }}</a>
-                        </span>
-                    </div>
+    </div>
+
+    <div class="titlebox">
+        <h2 class="titlebox__name">Links</h2>
+        <div class="home-projects" style="margin-top: 25px;">
+        {# <p>Also coming soon…</p> #}
+        {# {%- for post in collections.links.slice(0, 5) %}
+            <div class="post-list-item">
+                <div class="post-list-item--data">
+                    <a href="{{ post.data.link }}">{{ post.data.title }} <span style="font-weight: normal;">&nearrow;</span></a>
+                    <hr>
+                    <span class="post-list-item--date">
+                        <a href="{{ post.data.permalink | stripIndex }}">{{ post.data.date.toISOString() | isoDateOnly }}</a>
+                    </span>
                 </div>
-            {% endfor %} #}
-            <a class="titlebox__link" href="/links">All Links &rarr;</a>
-        </div>
+            </div>
+        {% endfor %} #}
+        <a class="titlebox__link" href="/links">All Links &rarr;</a>
     </div>
 
     <div class="titlebox">
         <h2 class="titlebox__name">Projects</h2>
         <div class="home-projects" style="margin-top: 25px;">
-          <p>Projects coming…</p>
+          {# <p>Projects coming…</p> #}
             {# {%- for project in site.projects.featured %}
             <div class="home-project" style="background-image: url('/assets/projects/{{ project.image }}');">
                 <a href="{{ project.link }}">{{ project.title }}</a>
