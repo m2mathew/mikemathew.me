@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "Personal site for Mike Mathew",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "build": "./node_modules/.bin/eleventy",
     "lifeweek": "./cli/week_of_life.sh",
