@@ -1,17 +1,8 @@
 .home-projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-@media (max-width: 650px) {
-    .home-projects {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    display: flex;
 }
 
 .home-project {
-    height: 200px;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,18 +12,19 @@
     overflow: hidden;
 }
 
+.home-project--image {
+    max-height: 72px;
+    max-width: 100%;
+    margin-inline-end: 24px;
+}
+
 .home-project a {
-    border-top: 1px solid var(--purewhite);
-    border-bottom: 1px solid var(--purewhite);
     padding: 10px 0;
     font-family: var(--base);
     width: 100%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
 }
 
 .home-project a:hover {
     color: var(--purewhite);
-    border-top: 1px solid var(--purewhite);
-    border-bottom: 1px solid var(--purewhite);
 }
