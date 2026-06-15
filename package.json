@@ -22,7 +22,7 @@
     "markdown-it-github-alerts": "^1.0.1",
     "markdown-it-image-figures": "^2.1.1",
     "marked": "^17.0.1",
-    "slugify": "^1.6.6"
+    "slugify": "^1.6.9"
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^1.0.5",
