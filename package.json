@@ -16,8 +16,8 @@
   "author": "Mike Mathew",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^v4.0.0-alpha.6",
-    "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0",
+    "@11ty/eleventy": "^v4.0.0-alpha.7",
+    "@11tyrocks/eleventy-plugin-lightningcss": "^1.6.0",
     "luxon": "^3.7.2",
     "markdown-it-github-alerts": "^1.0.1",
     "markdown-it-image-figures": "^2.1.1",
