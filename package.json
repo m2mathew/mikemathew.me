@@ -30,7 +30,7 @@
     "lint-staged": "^17.0.7",
     "markdown-it": "^14.1.0",
     "markdown-it-footnote": "^4.0.0",
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.4"
   },
   "lint-staged": {
     "config/**/*.js": "prettier --write --ignore-unknown"
