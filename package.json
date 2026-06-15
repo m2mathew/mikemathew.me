@@ -27,7 +27,7 @@
   "devDependencies": {
     "@11ty/eleventy-navigation": "^1.0.5",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^17.0.7",
     "markdown-it": "^14.1.0",
     "markdown-it-footnote": "^4.0.0",
     "prettier": "^3.8.1"
