@@ -1,6 +1,6 @@
 # mikemathew.me
 
-Don't call it a comeback, I've been working on this for years. 🎤
+_Don't call it a comeback, I've been working on this for years._ 🎤
 
 This project combines my old weblog at drumsensei.com with my personal site mikemathew.com.
 
@@ -10,7 +10,7 @@ Back in mid-2015, I started the drumsensei.com blog using RapidWeaver. I was a b
 
 In late-2015, I added mikemathew.com as a personal and/or portfolio site. Some of my work from The Iron Yard was shown there...but all of those projects are probably decrepit now [cut to dystopian scene with tumbleweeds blowing across the empty city streets].
 
-In the 2027-18 era, I changed the drumsensei.com site to a Gatsby site. I was entrenched in the React ecosystem, and Gatsby was an easy way to build a static site with too much JavaScript.
+In the 2017-18 era, I changed the drumsensei.com site to a Gatsby site. I was entrenched in the React ecosystem, and Gatsby was an easy way to build a static site with too much JavaScript.
 
 ## Present Day
 
