@@ -16,21 +16,21 @@
   "author": "Mike Mathew",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^v4.0.0-alpha.7",
-    "@11tyrocks/eleventy-plugin-lightningcss": "^1.6.0",
-    "luxon": "^3.7.2",
-    "markdown-it-github-alerts": "^1.0.1",
-    "markdown-it-image-figures": "^2.1.1",
-    "marked": "^18.0.5",
-    "slugify": "^1.6.9"
+    "@11ty/eleventy": "v4.0.0-alpha.10",
+    "@11tyrocks/eleventy-plugin-lightningcss": "1.6.0",
+    "luxon": "3.7.2",
+    "markdown-it-github-alerts": "1.0.1",
+    "markdown-it-image-figures": "2.1.1",
+    "marked": "18.0.7",
+    "slugify": "1.6.9"
   },
   "devDependencies": {
-    "@11ty/eleventy-navigation": "^1.0.5",
-    "husky": "^9.1.7",
-    "lint-staged": "^17.0.7",
-    "markdown-it": "^14.1.0",
-    "markdown-it-footnote": "^4.0.0",
-    "prettier": "^3.8.4"
+    "@11ty/eleventy-navigation": "1.0.5",
+    "husky": "9.1.7",
+    "lint-staged": "17.3.0",
+    "markdown-it": "14.1.0",
+    "markdown-it-footnote": "4.0.0",
+    "prettier": "3.9.6"
   },
   "lint-staged": {
     "config/**/*.js": "prettier --write --ignore-unknown"
