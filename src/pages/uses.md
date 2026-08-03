@@ -41,7 +41,7 @@ eleventyNavigation:
 - [Mimestream](https://mimestream.com/)
   - Gmail client but it looks like macOS Mail.app. The "unread" view is so useful.
 - [TextExpander](https://textexpander.com/)
-  - I'm on a decade-plus streak of using snippets to save time 💪
+  - I'm on a decade-plus weekly streak of using snippets to save time 💪
 - [1Password](https://1password.com/)
   - Whole family uses it.
 - [Rectangle](https://rectangleapp.com/)
