@@ -28,7 +28,7 @@
     "@11ty/eleventy-navigation": "1.0.5",
     "husky": "9.1.7",
     "lint-staged": "17.3.0",
-    "markdown-it": "14.1.0",
+    "markdown-it": "15.0.0",
     "markdown-it-footnote": "4.0.0",
     "prettier": "3.9.6"
   },
