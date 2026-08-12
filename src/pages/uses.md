@@ -18,6 +18,8 @@ eleventyNavigation:
   - I like these way more than I expected.
 - Microsoft Ergonomic Split Surface Keyboard.
   - Alas, Microsoft stopped making this keyboard.
+- [NocFree & Split Keyboard](https://www.nocfree.com/products/nocfree-and-reservation)
+  - I got it after it was a KickStarter but while it was still on sale. I'm still deciding if I like it or not.
 - [Apple Magic Mouse](https://www.apple.com/shop/product/mxk63am/a/magic-mouse-usb), along with magic grips on the side
 - [Apple Magic Trackpad](https://www.apple.com/shop/product/mxka3am/a/magic-trackpad-usb)
   - Useful for gestures.
@@ -38,6 +40,8 @@ eleventyNavigation:
   - I work in PostgreSQL a bunch, and this app helps me query the databases.
 - [Warp](https://www.warp.dev/) terminal
   - Modern terminal. I work around the "AI" bits as those don't interest me.
+- [Fastmail](http://join.fastmail.com/omglol)
+  - Good email client. Can't beat getting it bundled with an email domain like "omglol.email"!
 - [Mimestream](https://mimestream.com/)
   - Gmail client but it looks like macOS Mail.app. The "unread" view is so useful.
 - [TextExpander](https://textexpander.com/)
@@ -52,7 +56,9 @@ eleventyNavigation:
   - From the fine folks who made Tweetbot in days gone by.
 - [Cleanshot X](https://cleanshot.com/)
   - Easy screenshots and GIFs :chefs-kiss:
+- [Alfred](https://www.alfredapp.com/), a Mastodon client
+  - Replacement for macOS Spotlight, including clipboard history and a bunch more.
 - [Easy CSV Editor](https://vdt-labs.com/easy-csv-editor/)
   - So easy
 - [ClickUp](https://clickup.com/)
-  - We've been using this at Presto to manage tasks and as a Notion replacement. It's been pretty nice.
+  - We've been using this at Presto to manage tasks. It's been pretty nice, though they _really_ want us to "USE AI MORE".
