@@ -21,7 +21,7 @@
     "luxon": "3.7.2",
     "markdown-it-github-alerts": "1.0.1",
     "markdown-it-image-figures": "2.1.1",
-    "marked": "18.0.7",
+    "marked": "18.0.9",
     "slugify": "1.6.9"
   },
   "devDependencies": {
