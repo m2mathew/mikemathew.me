@@ -24,6 +24,8 @@ export const blogTags = (eleventyCollection) => {
       return tags;
     }, []);
 
+  console.log('allTags', [...new Set(allTags)]);
+
   return [...new Set(allTags)];
 };
 

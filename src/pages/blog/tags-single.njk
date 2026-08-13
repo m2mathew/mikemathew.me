@@ -1,0 +1,28 @@
+---
+pagination:
+  data: collections.blogTags
+  size: 1
+  alias: tag
+permalink: blog/tags/{{ tag | toLowerCase }}/index.html
+layout: base
+eleventyComputed:
+  title: "#{{ tag }}"
+  subtitle: "{{ collections[tag].length }}  post{% if collections[tag].length > 1 %}s{% endif %} tagged with #{{ tag }}"
+---
+
+{% set datePrinted = false %}
+{% set currentYear = 1000 %}
+
+{% set taglist = collections[tag] %}
+
+{%- for post in taglist | reverse -%}
+      {% set postYear = post.date.getFullYear() %}
+
+      {% if postYear != currentYear %}
+          <h3>{{ postYear }}</h3>
+      {% endif %}
+
+      {% include 'post_list_item.njk' %}
+
+      {% set currentYear = postYear %}
+{%- endfor -%}
