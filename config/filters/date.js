@@ -20,7 +20,7 @@ const ordinal = (day) => {
 const dateForFeed = (date) => {
   return date.toISOString();
 };
-const isOldPost = (date) => {
+const isOlderPost = (date) => {
   const dt = DateTime.fromISO(date.toISOString()).setZone('America/Chicago');
   return DateTime.now().diff(dt, 'years').years > 4;
 };
@@ -60,13 +60,13 @@ const postDateNoYear = (date) => {
 
 export default {
   dateForFeed,
-  isOldPost,
   diffInYears,
+  isOlderPost,
+  isoDateOnly,
+  isoDateOnlyForDiscussion,
+  postDate,
+  postDateNoYear,
+  postTime,
   toDateTime,
   toDateTimeNoSeconds,
-  isoDateOnlyForDiscussion,
-  isoDateOnly,
-  postDate,
-  postTime,
-  postDateNoYear,
 };
